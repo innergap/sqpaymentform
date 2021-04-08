@@ -15,7 +15,7 @@ window.addEventListener("message", function(event) {
     padding: 40px;
   }
 </style>
-<div style="font-size: 80px;">v4</div>
+<div style="font-size: 80px;">v5</div>
      <div id="form-container">
        
      <div id="sq-card-number"></div>
@@ -95,7 +95,7 @@ function onGetCardNonce(event) {
   paymentForm.requestCardNonce();
 }
         
-        window.postMessage('test here', "*");
+        window.parent.postMessage('test here', "*");
 
    </script>
 
