@@ -1,4 +1,6 @@
-  <!-- link to the SqPaymentForm library -->
+<html>
+<body>  
+<!-- link to the SqPaymentForm library -->
           <script type="text/javascript" src="https://js.squareupsandbox.com/v2/paymentform">
           </script>
 <script>
@@ -13,7 +15,7 @@ window.addEventListener("message", function(event) {
     padding: 40px;
   }
 </style>
-<div style="font-size: 80px;">v2</div>
+<div style="font-size: 80px;">v4</div>
      <div id="form-container">
        
      <div id="sq-card-number"></div>
@@ -75,7 +77,7 @@ window.addEventListener("message", function(event) {
            }
            //TODO: Replace alert with code in step 2.1
              console.log('nonce generated: ' + nonce);
-           window.postMessage('The generated nonce is: ' + nonce, "*");
+           window.parent.postMessage('The generated nonce is: ' + nonce, "*");
         }
       }
     });
@@ -92,6 +94,10 @@ function onGetCardNonce(event) {
   // Request a nonce from the SqPaymentForm object
   paymentForm.requestCardNonce();
 }
+        
+        window.postMessage('test here', "*");
 
    </script>
 
+</body>
+</html>
