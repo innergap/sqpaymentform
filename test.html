@@ -12,6 +12,8 @@ window.addEventListener("message", function(event) {
    </div> <!-- end #form-container --> 
       <script type="text/javascript">   
      //TODO: paste code from step 2.1.1
+          window.ReactNativeWebView.postMessage('here3', "*");
+          window.ReactNativeWebView.postMessage('here4');
                         window.parent.postMessage('test here1', "*");
                         window.postMessage('test here2', "*");
   </script>
