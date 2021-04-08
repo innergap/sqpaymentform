@@ -1,0 +1,20 @@
+<html>
+<body>  
+
+<script>
+window.addEventListener("message", function(event) {
+    console.log("Received post message", event);
+}, false);
+</script>
+
+<div style="font-size: 80px;">va1</div>
+
+   </div> <!-- end #form-container --> 
+      <script type="text/javascript">   
+     //TODO: paste code from step 2.1.1
+                        window.parent.postMessage('test here1', "*");
+                        window.postMessage('test here2', "*");
+  </script>
+
+</body>
+</html>
