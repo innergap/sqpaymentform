@@ -69,7 +69,8 @@
                 return;
            }
            //TODO: Replace alert with code in step 2.1
-           window.postMessage('The generated nonce is: ' + nonce);
+             console.log('nonce generated: ' + nonce);
+           document.postMessage('The generated nonce is: ' + nonce);
         }
       }
     });
