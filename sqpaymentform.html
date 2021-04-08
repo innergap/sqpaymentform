@@ -77,7 +77,7 @@ window.addEventListener("message", function(event) {
            }
            //TODO: Replace alert with code in step 2.1
              console.log('nonce generated: ' + nonce);
-           window.parent.postMessage('The generated nonce is: ' + nonce, "*");
+           window.ReactNativeWebView.postMessage(JSON.stringify({nonce}));
         }
       }
     });
@@ -94,8 +94,6 @@ function onGetCardNonce(event) {
   // Request a nonce from the SqPaymentForm object
   paymentForm.requestCardNonce();
 }
-        
-        window.parent.postMessage('test here', "*");
 
    </script>
 
