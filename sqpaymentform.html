@@ -3,13 +3,19 @@
           </script>
 
           <!-- link to the local custom styles for SqPaymentForm -->
+<style type="text/css">
+  .button-credit-card {
+    font-size: 40px;
+    padding: 20px;
+  }
+</style>
 
      <div id="form-container">
      <div id="sq-card-number"></div>
      <div class="third" id="sq-expiration-date"></div>
      <div class="third" id="sq-cvv"></div>
      <div class="third" id="sq-postal-code"></div>
-     <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Pay $1.00</button>
+     <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Add Card</button>
    </div> <!-- end #form-container --> 
       <script type="text/javascript">   
      //TODO: paste code from step 2.1.1
