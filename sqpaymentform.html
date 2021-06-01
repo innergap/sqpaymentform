@@ -39,7 +39,7 @@ window.addEventListener("message", function(event) {
        
      <div id="sq-card-number"></div>
      <div class="third" id="sq-expiration-date"></div>
-     <div class="third" id="sq-cvv"></div>
+     <div style="font-size: 100px;" class="third" id="sq-cvv"></div>
      <div class="third" id="sq-postal-code"></div>
      <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Add Card</button>
    </div> <!-- end #form-container --> 
@@ -69,6 +69,7 @@ window.addEventListener("message", function(event) {
        }],
        // Initialize the credit card placeholders
        cardNumber: {
+                 fontSize: '100px',
            elementId: 'sq-card-number',
            placeholder: 'Card Number'
        },
