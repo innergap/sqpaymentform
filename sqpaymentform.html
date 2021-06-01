@@ -35,7 +35,7 @@ window.addEventListener("message", function(event) {
           font-family: montserrat;
    }
 </style>
-<div style="font-size: 80px;">v15</div>
+<div style="font-size: 80px;">v16</div>
      <div id="form-container">
        
      <div class="card_input" id="sq-card-number"></div>
@@ -72,18 +72,22 @@ window.addEventListener("message", function(event) {
        cardNumber: {
                  fontSize: '100px',
            elementId: 'sq-card-number',
+           elementClass: 'card_input',
            placeholder: 'Card Number'
        },
        cvv: {
            elementId: 'sq-cvv',
+                 elementClass: 'card_input',
            placeholder: 'CVV'
        },
        expirationDate: {
            elementId: 'sq-expiration-date',
+                 elementClass: 'card_input',
            placeholder: 'MM/YY'
        },
        postalCode: {
            elementId: 'sq-postal-code',
+                 elementClass: 'card_input',
            placeholder: 'Postal'
        },
        // SqPaymentForm callback functions
