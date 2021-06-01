@@ -21,7 +21,7 @@ window.addEventListener("message", function(event) {
           width: auto;
           margin: 10;
   }
-  input {
+  .card_input {
           font-size: 60px;
           line-height: 24px;
           padding: 16px;
@@ -38,10 +38,10 @@ window.addEventListener("message", function(event) {
 <div style="font-size: 80px;">v14</div>
      <div id="form-container">
        
-     <div id="sq-card-number"></div>
-     <div class="third" id="sq-expiration-date"></div>
-     <div style="font-size: 100px;" class="third" id="sq-cvv"></div>
-     <div class="third" id="sq-postal-code"></div>
+     <div class="card_input" id="sq-card-number"></div>
+     <div class="card_input" id="sq-expiration-date"></div>
+     <div class="card_input" id="sq-cvv"></div>
+     <div class="card_input" id="sq-postal-code"></div>
      <button id="sq-creditcard" class="button-credit-card" onclick="onGetCardNonce(event)">Add Card</button>
    </div> <!-- end #form-container --> 
       <script type="text/javascript">   
